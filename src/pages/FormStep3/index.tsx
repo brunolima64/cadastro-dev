@@ -22,7 +22,7 @@ export const FormStep3 = () => {
 
     const handleNextStep = () => {
         if(ctxForm?.state.email !== '' && ctxForm?.state.github !== ''){
-        console.log(ctxForm.state)
+        return navigate('/step4');
     } else 
         return alert('O campo não pode estar vazio!');
     }

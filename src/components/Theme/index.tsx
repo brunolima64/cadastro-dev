@@ -39,6 +39,13 @@ export const Theme = ({children}: Props) => {
                             path='/step3'
                             active={ctxForm?.state.currentStep === 3}
                         />
+                        <SideBarItem
+                            title='Concluido'
+                            description='Tudo certo!'
+                            icon='check'
+                            path='/step4'
+                            active={ctxForm?.state.currentStep === 4}
+                        />
                     </C.SideBar>
                     <C.Page>
                         {children}
